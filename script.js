@@ -47,4 +47,14 @@ for (const key in courseTitles) {
     console.log(key, courseTitles[key]);
 }
 
+//=========================================
+// TODO-3: STRING OBJECT — charAt() & length
+// =========================================
+
+const str = "Hello";
+console.log("Length: ", str.length);
+console.log("First character: ",str.charAt(0));
+
+
+
 // End of Advance JavaScript Lab — good luck!
