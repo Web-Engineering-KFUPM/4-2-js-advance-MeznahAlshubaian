@@ -44,7 +44,7 @@ const courseTitles = {
     A301: "Computer Organization"
 };
 for (const key in courseTitles) {
-    console.log(courseTitles[key]);
+    console.log(key, courseTitles[key]);
 }
 
 // End of Advance JavaScript Lab — good luck!
