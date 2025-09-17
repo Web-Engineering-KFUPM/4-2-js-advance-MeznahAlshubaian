@@ -34,6 +34,17 @@ const student1 = new Student("Meznah","Alshubaian",3.9);
 console.log(student1.fullName);
 console.log(student1.gpa);
 
+// ====================================
+// TODO-2: OBJECT AS MAP + for...in LOOP
+// ====================================
 
+const courseTitles = {
+    A101: "Intro",
+    A201: "Data Structures",
+    A301: "Computer Organization"
+};
+for (const key in courseTitles) {
+    console.log(courseTitles[key]);
+}
 
 // End of Advance JavaScript Lab — good luck!
