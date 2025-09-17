@@ -64,6 +64,16 @@ console.log("Day: ",d.getDate());
 console.log("Month: ",d.getMonth());
 console.log("Year: ",d.getFullYear());
 
+// ============================================================
+// TODO-5: ARRAY + SPREAD — find MIN and MAX from 10 numbers
+// ============================================================
+
+const nums = [1,2,3,4,5,6,7,8,9,10];
+const min = Math.min(...nums);
+const max = Math.max(...nums);
+console.log("array: ",nums)
+console.log ("min: ",min,"max: ",max);
+
 
 
 
