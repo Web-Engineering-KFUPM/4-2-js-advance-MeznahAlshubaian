@@ -70,7 +70,7 @@ console.log("Year: ",d.getFullYear());
 const nums = [1,2,3,4,5,6,7,8,9,10];
 const min = Math.min(...nums);
 const max = Math.max(...nums);
-console.log("array: ",nums)
+console.log("array: ",nums);
 console.log ("min: ",min,"max: ",max);
 
 // ===================================================================
@@ -86,10 +86,22 @@ function maxInArray(arr) {
 try {
     const x = maxInArray([]);   // This will throw
 } catch (e) {
-    console.log("error --> empty array")
+    console.log("error --> empty array");
 } finally {
-    console.log("Final block")
+    console.log("Final block");
 }
 
+// ===================================================================================
+// TODO-7: REGEX + forEach — find words containing 'ab' and log matches from the list
+// ===================================================================================
+
+const words = ["ban", "babble", "make", "flab"];
+const re = /ab/;
+
+words.forEach(w => {
+    if (re.test(w)) {
+        console.log(`${w} matches!`);
+    }
+});
 
 // End of Advance JavaScript Lab — good luck!
