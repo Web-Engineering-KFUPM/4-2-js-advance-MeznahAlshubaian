@@ -55,6 +55,16 @@ const str = "Hello";
 console.log("Length: ", str.length);
 console.log("First character: ",str.charAt(0));
 
+// ===================================
+// TODO-4: DATE — day, month, and year
+// ===================================
+
+const d = new Date();
+console.log("Day: ",d.getDate());
+console.log("Month: ",d.getMonth());
+console.log("Year: ",d.getFullYear());
+
+
 
 
 // End of Advance JavaScript Lab — good luck!
