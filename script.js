@@ -7,7 +7,6 @@ INSTRUCTIONS:
 • Use the Console (F12 → Console) to view outputs.
 =================================================================
 */
-
 console.log("%cJS Lab Connected — Start completing the TODOs for Advance JavaScript!", "font-weight:bold; font-size:14px");
 
 // ==========================
@@ -74,7 +73,23 @@ const max = Math.max(...nums);
 console.log("array: ",nums)
 console.log ("min: ",min,"max: ",max);
 
+// ===================================================================
+// TODO-6: EXCEPTIONS — try/catch/finally with EMPTY ARRAY edge case
+// ===================================================================
 
+function maxInArray(arr) {
+    if (!Array.isArray(arr) || arr.length === 0) {
+        throw new Error("Array must be non-empty.");
+    }
+    return Math.max(...arr);
+}
+try {
+    const x = maxInArray([]);   // This will throw
+} catch (e) {
+    console.log("error --> empty array")
+} finally {
+    console.log("Final block")
+}
 
 
 // End of Advance JavaScript Lab — good luck!
